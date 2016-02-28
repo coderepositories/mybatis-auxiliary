@@ -1,1 +1,1 @@
-Mybatis Auxiliary (Mybatis¸¨Öú¹¤¾ß)
+Mybatis Auxiliary (Mybatis è¾…åŠ©å·¥å…·)
