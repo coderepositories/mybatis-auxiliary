@@ -6,6 +6,8 @@
         <module>mybatis-auxiliary-core</module>
         <module>mybatis-auxiliary-maven</module>
         <module>mybatis-auxiliary-maven</module>
+        <module>mybatis-auxiliary-maven</module>
+        <module>mybatis-auxiliary-maven</module>
     </modules>
     <parent>
         <groupId>com.github.coderepositories</groupId>
