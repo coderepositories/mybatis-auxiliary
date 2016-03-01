@@ -6,15 +6,17 @@
         <module>mybatis-auxiliary-core</module>
         <module>mybatis-auxiliary-maven</module>
     </modules>
+    
     <parent>
         <groupId>com.github.coderepositories</groupId>
         <artifactId>jcommons</artifactId>
         <version>1.0</version>
     </parent>
-
+    
+    <groupId>com.github.coderepositories</groupId>
     <artifactId>mybatis-auxiliary</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>mybatis-auxiliary</name>
     <url>https://github.com/coderepositories/jcommons</url>
 
