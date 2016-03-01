@@ -11,7 +11,28 @@
     <packaging>jar</packaging>
 
     <name>mybatis-auxiliary-core</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/coderepositories/mybatis-auxiliary</url>
+    <description>Mybatis Auxiliary Core</description>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>zhangguangyong</name>
+            <email>1243610991@qq.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git@github.com:coderepositories/mybatis-auxiliary.git</connection>
+        <developerConnection>scm:git@github.com:coderepositories/mybatis-auxiliary.git</developerConnection>
+        <url>https://github.com/coderepositories/mybatis-auxiliary</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,8 +61,6 @@
             <artifactId>beetl-samples</artifactId>
             <version>2.0.12</version>
         </dependency>
-
-
 
 
     </dependencies>

@@ -11,9 +11,28 @@
     <packaging>maven-plugin</packaging>
 
     <name>mybatis-auxiliary-maven Maven Plugin</name>
+    <url>https://github.com/coderepositories/mybatis-auxiliary</url>
+    <description>Mybatis Auxiliary Maven Plugin</description>
 
-    <!-- FIXME change it to the project's website -->
-    <url>http://maven.apache.org</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>zhangguangyong</name>
+            <email>1243610991@qq.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git@github.com:coderepositories/mybatis-auxiliary.git</connection>
+        <developerConnection>scm:git@github.com:coderepositories/mybatis-auxiliary.git</developerConnection>
+        <url>https://github.com/coderepositories/mybatis-auxiliary</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
