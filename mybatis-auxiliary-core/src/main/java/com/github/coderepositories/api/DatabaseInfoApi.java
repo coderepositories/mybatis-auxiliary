@@ -18,6 +18,11 @@ public interface DatabaseInfoApi {
      */
     DatabaseTablesInquiryOutputDTO databaseTablesInquiry(DatabaseTablesInquiryInputDTO inputDTO);
 
+    /**
+     * 查询表元数据
+     * @param inputDTO
+     * @return
+     */
     TableMetadataInquiryOutputDTO tableMetadataInquiry(TableMetadataInquiryInputDTO inputDTO);
     
 }
