@@ -20,6 +20,8 @@ public class DBConnector {
 
     private String password;
 
+    private Connection connection;
+
     /**
      * 初始化数据库连接器
      *
@@ -57,7 +59,11 @@ public class DBConnector {
      * @throws SQLException
      */
     public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url, user, password);
+        if(null != connection && !connection.isClosed()){
+            return connection;
+        }
+        this.connection = DriverManager.getConnection(url, user, password);
+        return connection;
     }
 
     /**
@@ -71,6 +77,24 @@ public class DBConnector {
      */
     public Connection getConnection(String url, String user, String password) throws SQLException {
         return DriverManager.getConnection(url, user, password);
+    }
+
+    /**
+     * 验证是否是Mysql数据库
+     * @return
+     * @throws SQLException
+     */
+    public boolean isMysql() throws SQLException {
+        return connection.getMetaData().getDatabaseProductName().equals(MYSQL_PRODUCT_NAME);
+    }
+
+    /**
+     * 验证是否是Oracle数据库
+     * @return
+     * @throws SQLException
+     */
+    public boolean isOracle() throws SQLException {
+        return connection.getMetaData().getDatabaseProductName().equals(ORACLE_PRODUCT_NAME);
     }
 
     public String getDriver() {
@@ -104,4 +128,9 @@ public class DBConnector {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+    private static final String MYSQL_PRODUCT_NAME = "MySQL";
+
+    private static final String ORACLE_PRODUCT_NAME = "Oracle";
 }
